@@ -25,11 +25,11 @@ Queries: Stored Procedures, Joins, and Generated Columns
 
 The system includes the following tables:
 
-Employees (empid int **primary key** , name varchar(30), email varchar(30) unique not null, phone varchar(10), Dep_id int, hire_Date date ,salary decimal(5,2))
+Employees (empid int primary key auto_increment , name varchar(30), email varchar(30) unique not null, phone varchar(10), Dep_id int, hire_Date date ,salary decimal(5,2))
 
-Salaries (salary_id int **primary key ** auto_increment, Emp_id int , basic_pay decimal(10,2), deduction decimal(10,2), net_salary decimal(10,2))
+Salaries (salary_id int primary key  auto_increment, Emp_id int , basic_pay decimal(10,2), deduction decimal(10,2), net_salary decimal(10,2))
 
-leaves( leave_iD int **primary key** auto_increment, emp_id int ,leave_type enum("sick","casual","annaul"),start_date date , end_date date,status enum('appove','pending','rejected ') default 'pending')
+leaves( leave_iD int primary key auto_increment, emp_id int ,leave_type enum("sick","casual","annaul"),start_date date , end_date date,status enum('appove','pending','rejected ') default 'pending')
 
 department(dep_id int **primary key** auto_increment, dep_name varchar(100) )
 
