@@ -13,9 +13,7 @@ Payroll Processing – Auto-calculate salaries, deductions, and net pay.
 
 Attendance & Leave Tracking – Automated leave calculations using MySQL functions.
 
-Performance Evaluation – KPI-based tracking and reports.
-
-Stored Procedures & Triggers – Automate business logic and ensure data consistency.
+Stored Procedures  – Automate business logic and ensure data consistency.
 
 🛠️ Technologies Used
 
