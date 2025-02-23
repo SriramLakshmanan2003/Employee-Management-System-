@@ -1,5 +1,5 @@
 # Employee-Management-System-
-Employee Management System (EMS) 🚀
+Employee Management System (EMS) 
 
 📌 Overview
 
@@ -25,17 +25,17 @@ Queries: Stored Procedures, Joins, and Generated Columns
 
 The system includes the following tables:
 
-Employees (EmpID, Name, Department, JoiningDate, etc.)
+Employees (empid int **primary key** , name varchar(30), email varchar(30) unique not null, phone varchar(10), Dep_id int, hire_Date date ,salary decimal(5,2))
 
-Salaries (EmpID, BasicSalary, Deductions, NetSalary)
+Salaries (salary_id int **primary key ** auto_increment, Emp_id int , basic_pay decimal(10,2), deduction decimal(10,2), net_salary decimal(10,2))
 
-Attendance (EmpID, Date, Status)
+leaves( leave_iD int **primary key** auto_increment, emp_id int ,leave_type enum("sick","casual","annaul"),start_date date , end_date date,status enum('appove','pending','rejected ') default 'pending')
 
-LeaveRecords (EmpID, StartDate, EndDate, LeaveDays)
+department(dep_id int **primary key** auto_increment, dep_name varchar(100) )
 
 🤝 Contributing
 
-Feel free to fork this repository, submit issues, or create pull requests. Let's build together! 🚀
+Feel free to fork this repository, submit issues, or create pull requests. Let's build together...!
 
 
 
